@@ -22,7 +22,7 @@ export default function Analyzer() {
     setLoading(true);
     
     try {
-        const res = await axios.post('http://127.0.0.1:5000/predict', formData);
+        const res = await axios.post('https://exohabitai-10y4.onrender.com/predict', formData);
         
         const newResult = {
             ...res.data,
