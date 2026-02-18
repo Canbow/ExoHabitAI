@@ -101,6 +101,10 @@ def predict():
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
+@app.route('/', methods=['GET'])
+def home():
+    return "🚀 ExoHabitAI Backend API is Live and Running!"
+
 if __name__ == '__main__':
     print("🚀 Server Running on http://127.0.0.1:5000")
     app.run(debug=True, port=5000)

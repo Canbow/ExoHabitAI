@@ -16,7 +16,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     // REAL DATA FETCH
-    axios.get('http://127.0.0.1:5000/dashboard-data')
+    axios.get('https://exohabitai-1-ysat.onrender.com/dashboard-data')
       .then(res => setData(res.data))
       .catch(err => console.error(err)) // Handles offline backend gracefully
       .finally(() => setLoading(false));
